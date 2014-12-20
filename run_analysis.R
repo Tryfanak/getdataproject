@@ -45,11 +45,16 @@ by_obs <- inner_join( xdata, activity_labels) %>%
     gather( variable, value, -c(subject,activity) ) %>%
     group_by(subject, activity, variable) %>%
     summarize(average=mean(value)) %>%
-    arrange( subject, activity, variable) %>%
-    mutate( variable = gsub("..","",variable, fixed = TRUE))
-
-# Convert, because spread does not seem to work on a dataframe table
-temp <- data.frame(by_obs)
+    mutate( variable = gsub("BodyBody","Body",variable, fixed = TRUE))%>%
+    mutate( variable = gsub("tBody","timeBody",variable, fixed = TRUE))%>%
+    mutate( variable = gsub("fBody","freqBody",variable, fixed = TRUE))%>%
+    mutate( variable = gsub("tGravity","timeGravity",variable, fixed = TRUE))%>%
+    mutate( variable = gsub("fGravity","freqGravity",variable, fixed = TRUE))%>%
+    mutate( variable = gsub("..","",variable, fixed = TRUE))%>%
+    mutate( variable = gsub(".","_",variable, fixed = TRUE))%>%
+    arrange( subject, activity, variable) 
+    
+# Use spread to put all 68 variables back into columns
 result <- spread( data.frame(by_obs), variable, average)
 
 write.table(result,"tidydata.txt",row.name=FALSE)
