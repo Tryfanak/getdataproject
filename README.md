@@ -30,7 +30,8 @@ The course rubrics detail the activities the run_analysis.R script should perfor
 * The final line of run_analysis.R contains the command to read this file back into R
 
 ##What the Script Does
-This section describes how the run_analysis.R script works in detail. My assumption (supported by the project rubrics) is that the initial data set has already been downloaded (from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and unzipped, and that it is in a folder named 'UCI HAR Dataset' (the default) in the user's working directory.
+This section describes how the run_analysis.R script works in detail. 
+My assumption (supported by the project rubrics) is that the initial data set has already been downloaded (from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and unzipped, and that it is in a folder named 'UCI HAR Dataset' (the default) in the user's working directory.
 
 ###Reads the data set
 These files are read in. (Descriptions based on the data set README.txt)
@@ -52,8 +53,30 @@ The other other files in the UCI HAR Dataset, such as the Inertial Signals data,
 ### Combines training and test data sets
 * The training data set from the step above is 7352x563
 * The test data set from the step above is 2947x563
-* They are row bound to create a combined data set which is 10299x563
+* They are row bound to create a combined data set (x_combine_full) which is 10299x563
 * This matches the number of instances (10299) listed in the description of the data set
 
+### Applies column names to data sets
+* For x_combine-full, the first two columns are subject and activity_id. The remaining columns use the names provided in the features.txt file
+* Since the names provided in features.txt contain duplicates (apparently errors on data entry) and also characters which cannot reliable used in column names, the make.names() function is used to clean them up
+* This is safe because the columns with the duplicate names are not needed in this assignment
+* The make.names() function replaces illegal characters with periods. These are tidied up more later
+* Column names for the activity_labels are chosen to give meaningful names for the join later
+
+## Use piped dplyr functions to transform the data set
+dplyr provides a convenient way to chain multiple transformations cleanly
+* Join to activity_labels to add meaningful activity names to each row in x_combine_full
+* Subset columns of x_combine_full to exclude features which do not represent mean or standard deviation values. I chose to match by "mean()" and "std()", so features which have "mean" elsewhere in the feature name are excluded. This leaves 66 features of interest
+* Melt the data set so there is one row for each subject/activity/feature. (It's easier to sort and aggregate the data this way)
+* Calculate average values by subject and activity for each of the 66 features
+* Do semantic clean up on the feature names, so they will look nice in the tidy data set. this includes fixing some errors, and expanding the "t" prefix to "time", and the "f" prefix to "freq".
+* Sort the data set by subject and activity (good practice to make it easy to read)
+
+## Convert the data set back to a wide format
+In my interpretation this is the best tidy format to use, since the different types of accelerometer readings were taken at the same time, whilst the subject was performing an activity. Each row of the data set represents a single "observation", with the subject, the activity they performed, and the average for each of the 66 selected features. There are 180 rows in the tidy data set, representing 30 subject, each performing all of the 6 activities.
+
+## Write out the tidy data set
+It is written to the working directory as tidydata.txt
+
 ##Code Book
-The Code Book in this repository describes the contents of the tidy data set.
+The Code Book also stored in this repository describes the contents of the tidy data set.
