@@ -2,7 +2,7 @@ Code Book
 ==============
 
 ##Background
-Information about the source data for this project can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. It includes information about experimental design, what accelerometer information was recorded, how it was processed. It also has detailed descriptions of all the files made available in the data set.
+Information about the source data for this project can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. It includes information about experimental design, what accelerometer information was recorded, and how it was processed. It also has detailed descriptions of all the files made available in the data set.
 
 ##Document Purpose
 This code book describes the contents of the "tidydata.txt" file submitted for the project.For more detailed information about the meaning of features, please refer to the site above
