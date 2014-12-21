@@ -50,12 +50,12 @@ by_obs <- inner_join( xdata, activity_labels) %>%
     mutate( variable = gsub("..","",variable, fixed = TRUE))%>%
     mutate( variable = gsub(".","_",variable, fixed = TRUE))%>%
     #  sort by subject/activity/feature
-    arrange( subject, activity, variable) 
+    arrange( subject, activity, variable)
     
 # Convert back into a wide data set, with all mean/std features on one line
-result <- spread( data.frame(by_obs), variable, average)
+tidydata <- spread( data.frame(by_obs), variable, average)
 
 # Write out the result in the required format
-write.table(result,"tidydata.txt",row.name=FALSE)
+write.table(tidydata,"tidydata.txt",row.name=FALSE)
 
 # To read back, use 'tidydata <- read.table("tidydata.txt", header=TRUE )'

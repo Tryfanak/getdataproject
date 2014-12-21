@@ -69,11 +69,11 @@ dplyr provides a convenient way to chain multiple transformations cleanly
 * Subset columns of x_combine_full to exclude features which do not represent mean or standard deviation values. I chose to match by "mean()" and "std()", so features which have "mean" elsewhere in the feature name are excluded. This leaves 66 features of interest
 * Melt the data set so there is one row for each subject/activity/feature. (It's easier to sort and aggregate the data this way)
 * Calculate average values by subject and activity for each of the 66 features
-* Do semantic clean up on the feature names, so they will look nice in the tidy data set. this includes fixing some errors, and expanding the "t" prefix to "time", and the "f" prefix to "freq".
+* Do semantic clean up on the feature names, so they will look nice in the tidy data set. This includes fixing some errors, and expanding the "t" prefix to "time", and the "f" prefix to "freq".
 * Sort the data set by subject and activity (good practice to make it easy to read)
 
 ## Convert the data set back to a wide format
-In my interpretation this is the best tidy format to use, since the different types of accelerometer readings were taken at the same time, whilst the subject was performing an activity. Each row of the data set represents a single "observation", with the subject, the activity they performed, and the average for each of the 66 selected features. There are 180 rows in the tidy data set, representing 30 subject, each performing all of the 6 activities.
+In my interpretation this is the best tidy format to use, since the different types of accelerometer readings were taken at the same time, whilst the subject was performing an activity. Each row of the data set represents a single "observation", with the subject, the activity they performed, and the average for each of the 66 selected features. There are 180 rows in the tidy data set, representing 30 subjects, each performing all of the 6 activities.
 
 ## Write out the tidy data set
 It is written to the working directory as tidydata.txt
