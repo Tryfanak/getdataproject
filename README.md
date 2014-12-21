@@ -5,7 +5,7 @@ This is the repository for my Getting and Cleaning Data Course Project.
 
 ##Project Requirements
 
-The course project is an analysis of accelerometer data. 
+The course project is an analysis of accelerometer data from Samsung Galaxy S smartphones.
 
 It requires downloading data from the UCI Machine Learning Repository,
 and creating and submitting a tidy data set summarizing the data.
