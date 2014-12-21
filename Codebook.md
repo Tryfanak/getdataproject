@@ -93,12 +93,12 @@ The feature columns and their meaning are:
 * timeBodyGyroJerkMag_std    --    Body angular velocity magnitude - standard deviation - time domain
 * timeBodyGyroMag_mean    --    Body angular velocity magnitude - mean - time domain
 * timeBodyGyroMag_std    --    Body angular velocity magnitude - standard deviation - time domain
-timeGravityAcc_mean_X    --    Gravity acceleration - mean - X-axis - time domain
-timeGravityAcc_mean_Y    --    Gravity acceleration - mean - Y-axis - time domain
-timeGravityAcc_mean_Z    --    Gravity acceleration - mean - Z-axis - time domain
-timeGravityAcc_std_X    --    Gravity acceleration - standard deviation - X-axis - time domain
-timeGravityAcc_std_Y    --    Gravity acceleration - standard deviation - Y-axis - time domain
-timeGravityAcc_std_Z    --    Gravity acceleration - standard deviation - Z-axis - time domain
-timeGravityAccMag_mean    --    Gravity acceleration magnitude - mean - time domain
-timeGravityAccMag_std    --    Gravity acceleration magnitude - standard deviation - time domain
+* timeGravityAcc_mean_X    --    Gravity acceleration - mean - X-axis - time domain
+* timeGravityAcc_mean_Y    --    Gravity acceleration - mean - Y-axis - time domain
+* timeGravityAcc_mean_Z    --    Gravity acceleration - mean - Z-axis - time domain
+* timeGravityAcc_std_X    --    Gravity acceleration - standard deviation - X-axis - time domain
+* timeGravityAcc_std_Y    --    Gravity acceleration - standard deviation - Y-axis - time domain
+* timeGravityAcc_std_Z    --    Gravity acceleration - standard deviation - Z-axis - time domain
+* timeGravityAccMag_mean    --    Gravity acceleration magnitude - mean - time domain
+* timeGravityAccMag_std    --    Gravity acceleration magnitude - standard deviation - time domain
 
