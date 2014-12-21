@@ -35,70 +35,70 @@ Each feature is the average of the readings for that feature, for that subject a
 Features values are normalized (dimensionless) and bounded within [-1,1]
 
 The feature columns and their meaning are:
-* freqBodyAcc_mean_X	Body acceleration - mean - X-axis - frequency domain
-* freqBodyAcc_mean_Y	Body acceleration - mean - Y-axis - frequency domain
-* freqBodyAcc_mean_Z	Body acceleration - mean - Z-axis - frequency domain
-* freqBodyAcc_std_X	Body acceleration - standard deviation - X-axis - frequency domain
-* freqBodyAcc_std_Y	Body acceleration - standard deviation - Y-axis - frequency domain
-* freqBodyAcc_std_Z	Body acceleration - standard deviation - Z-axis - frequency domain
-* freqBodyAccJerk_mean_X	Body linear acceleration - mean - X-axis - frequency domain
-* freqBodyAccJerk_mean_Y	Body linear acceleration - mean - Y-axis - frequency domain
-* freqBodyAccJerk_mean_Z	Body linear acceleration - mean - Z-axis - frequency domain
-* freqBodyAccJerk_std_X	Body linear acceleration - standard deviation - X-axis - frequency domain
-* freqBodyAccJerk_std_Y	Body linear acceleration - standard deviation - Y-axis - frequency domain
-* freqBodyAccJerk_std_Z	Body linear acceleration - standard deviation - Z-axis - frequency domain
-* freqBodyAccJerkMag_mean	Body linear acceleration magnitude - mean - frequency domain
-* freqBodyAccJerkMag_std	Body linear acceleration magnitude - standard deviation - frequency domain
-* freqBodyAccMag_mean	Body acceleration magnitude - mean - frequency domain
-* freqBodyAccMag_std	Body acceleration magnitude - standard deviation - frequency domain
-* freqBodyGyro_mean_X	Body angular acceleration - mean - X-axis - frequency domain
-* freqBodyGyro_mean_Y	Body angular acceleration - mean - Y-axis - frequency domain
-* freqBodyGyro_mean_Z	Body angular acceleration - mean - Z-axis - frequency domain
-* freqBodyGyro_std_X	Body angular acceleration - standard deviation - X-axis - frequency domain
-* freqBodyGyro_std_Y	Body angular acceleration - standard deviation - Y-axis - frequency domain
-* freqBodyGyro_std_Z	Body angular acceleration - standard deviation - Z-axis - frequency domain
-* freqBodyGyroJerkMag_mean	Body angular velocity magnitude - mean - frequency domain
-* freqBodyGyroJerkMag_std	Body angular velocity magnitude - standard deviation - frequency domain
-* freqBodyGyroMag_mean	Body angular acceleration magnitude - mean - frequency domain
-* freqBodyGyroMag_std	Body angular acceleration magnitude - standard deviation - frequency domain
-* timeBodyAcc_mean_X	Body acceleration - mean - X-axis - time domain
-* timeBodyAcc_mean_Y	Body acceleration - mean - Y-axis - time domain
-* timeBodyAcc_mean_Z	Body acceleration - mean - Z-axis - time domain
-* timeBodyAcc_std_X	Body acceleration - standard deviation - X-axis - time domain
-* timeBodyAcc_std_Y	Body acceleration - standard deviation - Y-axis - time domain
-* timeBodyAcc_std_Z	Body acceleration - standard deviation - Z-axis - time domain
-* timeBodyAccJerk_mean_X	Body linear acceleration - mean - X-axis - time domain
-* timeBodyAccJerk_mean_Y	Body linear acceleration - mean - Y-axis - time domain
-* timeBodyAccJerk_mean_Z	Body linear acceleration - mean - Z-axis - time domain
-* timeBodyAccJerk_std_X	Body linear acceleration - standard deviation - X-axis - time domain
-* timeBodyAccJerk_std_Y	Body linear acceleration - standard deviation - Y-axis - time domain
-* timeBodyAccJerk_std_Z	Body linear acceleration - standard deviation - Z-axis - time domain
-* timeBodyAccJerkMag_mean	Body linear acceleration magnitude - mean - time domain
-* timeBodyAccJerkMag_std	Body linear acceleration magnitude - standard deviation - time domain
-* timeBodyAccMag_mean	Body acceleration magnitude - mean - time domain
-* timeBodyAccMag_std	Body acceleration magnitude - standard deviation - time domain
-* timeBodyGyro_mean_X	Body angular acceleration - mean - X-axis - time domain
-* timeBodyGyro_mean_Y	Body angular acceleration - mean - Y-axis - time domain
-* timeBodyGyro_mean_Z	Body angular acceleration - mean - Z-axis - time domain
-* timeBodyGyro_std_X	Body angular acceleration - standard deviation - X-axis - time domain
-* timeBodyGyro_std_Y	Body angular acceleration - standard deviation - Y-axis - time domain
-* timeBodyGyro_std_Z	Body angular acceleration - standard deviation - Z-axis - time domain
-* timeBodyGyroJerk_mean_X	Body angular velocity - mean - X-axis - time domain
-* timeBodyGyroJerk_mean_Y	Body angular velocity - mean - Y-axis - time domain
-* timeBodyGyroJerk_mean_Z	Body angular velocity - mean - Z-axis - time domain
-* timeBodyGyroJerk_std_X	Body angular velocity - standard deviation - X-axis - time domain
-* timeBodyGyroJerk_std_Y	Body angular velocity - standard deviation - Y-axis - time domain
-* timeBodyGyroJerk_std_Z	Body angular velocity - standard deviation - Z-axis - time domain
-* timeBodyGyroJerkMag_mean	Body angular velocity magnitude - mean - time domain
-* timeBodyGyroJerkMag_std	Body angular velocity magnitude - standard deviation - time domain
-* timeBodyGyroMag_mean	Body angular velocity magnitude - mean - time domain
-* timeBodyGyroMag_std	Body angular velocity magnitude - standard deviation - time domain
-* timeGravityAcc_mean_X	Gravity acceleration - mean - X-axis - time domain
-* timeGravityAcc_mean_Y	Gravity acceleration - mean - Y-axis - time domain
-* timeGravityAcc_mean_Z	Gravity acceleration - mean - Z-axis - time domain
-* timeGravityAcc_std_X	Gravity acceleration - standard deviation - X-axis - time domain
-* timeGravityAcc_std_Y	Gravity acceleration - standard deviation - Y-axis - time domain
-* timeGravityAcc_std_Z	Gravity acceleration - standard deviation - Z-axis - time domain
-* timeGravityAccMag_mean	Gravity acceleration magnitude - mean - time domain
-* timeGravityAccMag_std	Gravity acceleration magnitude - standard deviation - time domain
+* freqBodyAcc_mean_X    --    Body acceleration - mean - X-axis - frequency domain
+* freqBodyAcc_mean_Y    --    Body acceleration - mean - Y-axis - frequency domain
+* freqBodyAcc_mean_Z    --    Body acceleration - mean - Z-axis - frequency domain
+* freqBodyAcc_std_X    --    Body acceleration - standard deviation - X-axis - frequency domain
+* freqBodyAcc_std_Y    --    Body acceleration - standard deviation - Y-axis - frequency domain
+* freqBodyAcc_std_Z    --    Body acceleration - standard deviation - Z-axis - frequency domain
+* freqBodyAccJerk_mean_X    --    Body linear acceleration - mean - X-axis - frequency domain
+* freqBodyAccJerk_mean_Y    --    Body linear acceleration - mean - Y-axis - frequency domain
+* freqBodyAccJerk_mean_Z    --    Body linear acceleration - mean - Z-axis - frequency domain
+* freqBodyAccJerk_std_X    --    Body linear acceleration - standard deviation - X-axis - frequency domain
+* freqBodyAccJerk_std_Y    --    Body linear acceleration - standard deviation - Y-axis - frequency domain
+* freqBodyAccJerk_std_Z    --    Body linear acceleration - standard deviation - Z-axis - frequency domain
+* freqBodyAccJerkMag_mean    --    Body linear acceleration magnitude - mean - frequency domain
+* freqBodyAccJerkMag_std    --    Body linear acceleration magnitude - standard deviation - frequency domain
+* freqBodyAccMag_mean    --    Body acceleration magnitude - mean - frequency domain
+* freqBodyAccMag_std    --    Body acceleration magnitude - standard deviation - frequency domain
+* freqBodyGyro_mean_X    --    Body angular acceleration - mean - X-axis - frequency domain
+* freqBodyGyro_mean_Y    --    Body angular acceleration - mean - Y-axis - frequency domain
+* freqBodyGyro_mean_Z    --    Body angular acceleration - mean - Z-axis - frequency domain
+* freqBodyGyro_std_X    --    Body angular acceleration - standard deviation - X-axis - frequency domain
+* freqBodyGyro_std_Y    --    Body angular acceleration - standard deviation - Y-axis - frequency domain
+* freqBodyGyro_std_Z    --    Body angular acceleration - standard deviation - Z-axis - frequency domain
+* freqBodyGyroJerkMag_mean    --    Body angular velocity magnitude - mean - frequency domain
+* freqBodyGyroJerkMag_std    --    Body angular velocity magnitude - standard deviation - frequency domain
+* freqBodyGyroMag_mean    --    Body angular acceleration magnitude - mean - frequency domain
+* freqBodyGyroMag_std    --    Body angular acceleration magnitude - standard deviation - frequency domain
+* timeBodyAcc_mean_X    --    Body acceleration - mean - X-axis - time domain
+* timeBodyAcc_mean_Y    --    Body acceleration - mean - Y-axis - time domain
+* timeBodyAcc_mean_Z    --    Body acceleration - mean - Z-axis - time domain
+* timeBodyAcc_std_X    --    Body acceleration - standard deviation - X-axis - time domain
+* timeBodyAcc_std_Y    --    Body acceleration - standard deviation - Y-axis - time domain
+* timeBodyAcc_std_Z    --    Body acceleration - standard deviation - Z-axis - time domain
+* timeBodyAccJerk_mean_X    --    Body linear acceleration - mean - X-axis - time domain
+* timeBodyAccJerk_mean_Y    --    Body linear acceleration - mean - Y-axis - time domain
+* timeBodyAccJerk_mean_Z    --    Body linear acceleration - mean - Z-axis - time domain
+* timeBodyAccJerk_std_X    --    Body linear acceleration - standard deviation - X-axis - time domain
+* timeBodyAccJerk_std_Y    --    Body linear acceleration - standard deviation - Y-axis - time domain
+* timeBodyAccJerk_std_Z    --    Body linear acceleration - standard deviation - Z-axis - time domain
+* timeBodyAccJerkMag_mean    --    Body linear acceleration magnitude - mean - time domain
+* timeBodyAccJerkMag_std    --    Body linear acceleration magnitude - standard deviation - time domain
+* timeBodyAccMag_mean    --    Body acceleration magnitude - mean - time domain
+* timeBodyAccMag_std    --    Body acceleration magnitude - standard deviation - time domain
+* timeBodyGyro_mean_X    --    Body angular acceleration - mean - X-axis - time domain
+* timeBodyGyro_mean_Y    --    Body angular acceleration - mean - Y-axis - time domain
+* timeBodyGyro_mean_Z    --    Body angular acceleration - mean - Z-axis - time domain
+* timeBodyGyro_std_X    --    Body angular acceleration - standard deviation - X-axis - time domain
+* timeBodyGyro_std_Y    --    Body angular acceleration - standard deviation - Y-axis - time domain
+* timeBodyGyro_std_Z    --    Body angular acceleration - standard deviation - Z-axis - time domain
+* timeBodyGyroJerk_mean_X    --    Body angular velocity - mean - X-axis - time domain
+* timeBodyGyroJerk_mean_Y    --    Body angular velocity - mean - Y-axis - time domain
+* timeBodyGyroJerk_mean_Z    --    Body angular velocity - mean - Z-axis - time domain
+* timeBodyGyroJerk_std_X    --    Body angular velocity - standard deviation - X-axis - time domain
+* timeBodyGyroJerk_std_Y    --    Body angular velocity - standard deviation - Y-axis - time domain
+* timeBodyGyroJerk_std_Z    --    Body angular velocity - standard deviation - Z-axis - time domain
+* timeBodyGyroJerkMag_mean    --    Body angular velocity magnitude - mean - time domain
+* timeBodyGyroJerkMag_std    --    Body angular velocity magnitude - standard deviation - time domain
+* timeBodyGyroMag_mean    --    Body angular velocity magnitude - mean - time domain
+* timeBodyGyroMag_std    --    Body angular velocity magnitude - standard deviation - time domain
+timeGravityAcc_mean_X    --    Gravity acceleration - mean - X-axis - time domain
+timeGravityAcc_mean_Y    --    Gravity acceleration - mean - Y-axis - time domain
+timeGravityAcc_mean_Z    --    Gravity acceleration - mean - Z-axis - time domain
+timeGravityAcc_std_X    --    Gravity acceleration - standard deviation - X-axis - time domain
+timeGravityAcc_std_Y    --    Gravity acceleration - standard deviation - Y-axis - time domain
+timeGravityAcc_std_Z    --    Gravity acceleration - standard deviation - Z-axis - time domain
+timeGravityAccMag_mean    --    Gravity acceleration magnitude - mean - time domain
+timeGravityAccMag_std    --    Gravity acceleration magnitude - standard deviation - time domain
 
